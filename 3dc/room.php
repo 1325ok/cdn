@@ -18,5 +18,5 @@
         </div>
     </form>
 </div>
-<a href="exit.php">Exit</a>
+<a href="http://3dc.rf.gd/exit.php">Exit</a>
 <script src="https://cdn.1325ok.com/3dc/room.js"></script>
