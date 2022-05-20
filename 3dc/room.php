@@ -19,4 +19,4 @@
     </form>
 </div>
 <a href="exit.php">Exit</a>
-<script src="js/room.js"></script>
+<script src="https://cdn.1325ok.com/3dc/room.js"></script>
