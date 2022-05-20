@@ -17,7 +17,7 @@ $(document).ready(function() {
             scrollBottom($('.show-chat'));
             var data = $(this).serialize();
             $('.message').val('');
-            var chat_data = send_request('saveChat', 'controller/ajax.php', data);
+            var chat_data = send_request('saveChat', 'https://3dc.rf.gd/controller/ajax.php', data);
             $('.show-chat').html(chat_data);
             scrollBottom($('.show-chat'));
         } else {
@@ -36,7 +36,7 @@ $(window).load(function(e) {
 });
 
 function updateChat() {
-    var chat_data = send_request('sync', 'controller/ajax.php', '');
+    var chat_data = send_request('sync', 'https://3dc.rf.gd/controller/ajax.php', '');
     $('.show-chat').html(chat_data);
     scrollBottom($('.show-chat'));
 }
@@ -52,7 +52,7 @@ function parseJson(data) {
 }
 
 function checkUserSession() {
-    var response = send_request('syncUser', 'controller/ajax.php', '');
+    var response = send_request('syncUser', 'https://3dc.rf.gd/controller/ajax.php', '');
 
     if (response === 0) {
         location.reload();
